@@ -1,0 +1,108 @@
+@charset "UTF-8";
+@import url("../assets/fonts/AdobeGaramondProFont.css");
+/* line 5, /home/jtrepichio/webDev/mr_mrs_smith/scss/style.scss */
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0; }
+
+/* line 12, /home/jtrepichio/webDev/mr_mrs_smith/scss/style.scss */
+*, *::before, *::after {
+  box-sizing: inherit; }
+
+/* line 16, /home/jtrepichio/webDev/mr_mrs_smith/scss/style.scss */
+body {
+  font-size: 1.6rem;
+  font-family: Helvetica, sans-serif;
+  width: 57%;
+  margin: 0 auto; }
+
+/* line 24, /home/jtrepichio/webDev/mr_mrs_smith/scss/style.scss */
+.red {
+  color: red; }
+
+/* line 28, /home/jtrepichio/webDev/mr_mrs_smith/scss/style.scss */
+.asterisk {
+  font-size: 3rem;
+  vertical-align: sub; }
+
+/* line 33, /home/jtrepichio/webDev/mr_mrs_smith/scss/style.scss */
+a {
+  font-style: italic;
+  text-decoration: none; }
+  /* line 37, /home/jtrepichio/webDev/mr_mrs_smith/scss/style.scss */
+  a:hover {
+    color: red; }
+
+/* line 42, /home/jtrepichio/webDev/mr_mrs_smith/scss/style.scss */
+h2 {
+  font-size: 1.8rem;
+  line-height: 2; }
+
+/* line 47, /home/jtrepichio/webDev/mr_mrs_smith/scss/style.scss */
+h3 {
+  font-weight: lighter;
+  font-size: initial; }
+
+/* line 53, /home/jtrepichio/webDev/mr_mrs_smith/scss/style.scss */
+header::before {
+  display: block;
+  position: absolute;
+  content: '';
+  width: 20%;
+  height: 935px;
+  max-width: 100%;
+  background-color: #ccc;
+  background: url("../assets/images/jolie.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 7rem;
+  left: 0; }
+
+/* line 59, /home/jtrepichio/webDev/mr_mrs_smith/scss/style.scss */
+header::after {
+  display: block;
+  position: absolute;
+  content: '';
+  width: 20%;
+  height: 935px;
+  max-width: 100%;
+  background-color: #ccc;
+  background: url("../assets/images/pitt.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 7rem;
+  right: 0; }
+
+/* line 64, /home/jtrepichio/webDev/mr_mrs_smith/scss/style.scss */
+header h1 {
+  font-family: 'Adobe Garamond Pro';
+  text-align: center;
+  font-size: 7.5vw;
+  font-weight: lighter; }
+
+/* line 74, /home/jtrepichio/webDev/mr_mrs_smith/scss/style.scss */
+article img {
+  width: 100%;
+  height: auto;
+  margin: 2rem 0; }
+
+/* line 80, /home/jtrepichio/webDev/mr_mrs_smith/scss/style.scss */
+article p {
+  line-height: 1.5; }
+  /* line 3, /home/jtrepichio/webDev/mr_mrs_smith/scss/helper/_make-ratingClass.scss */
+  article p span.rating-1::before {
+    content: "★☆☆☆☆"; }
+  /* line 3, /home/jtrepichio/webDev/mr_mrs_smith/scss/helper/_make-ratingClass.scss */
+  article p span.rating-2::before {
+    content: "★★☆☆☆"; }
+  /* line 3, /home/jtrepichio/webDev/mr_mrs_smith/scss/helper/_make-ratingClass.scss */
+  article p span.rating-3::before {
+    content: "★★★☆☆"; }
+  /* line 3, /home/jtrepichio/webDev/mr_mrs_smith/scss/helper/_make-ratingClass.scss */
+  article p span.rating-4::before {
+    content: "★★★★☆"; }
+  /* line 3, /home/jtrepichio/webDev/mr_mrs_smith/scss/helper/_make-ratingClass.scss */
+  article p span.rating-5::before {
+    content: "★★★★★"; }

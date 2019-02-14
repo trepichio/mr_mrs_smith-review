@@ -1,0 +1,14 @@
+@mixin background($person) {
+	display: block;
+	position: absolute;
+	content: '';
+	width: 20%;
+	height: 935px;
+	max-width: 100%; 
+	background-color: #ccc;
+	background: url('../assets/images/' + $person + '.jpg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	top: 7rem;
+
+}

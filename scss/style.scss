@@ -1,0 +1,85 @@
+@import url('../assets/fonts/AdobeGaramondProFont.css');
+@import 'helper/background';
+@import 'helper/fn_make_score';
+@import 'helper/make-ratingClass';
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+	margin: 0;
+	padding: 0;
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+body {
+	font-size: 1.6rem;
+	font-family: Helvetica, sans-serif;
+	width: 57%;
+	margin: 0 auto;
+
+} 
+
+.red {
+	color: rgb(255,0,0);
+}
+
+.asterisk {
+		font-size: 3rem;
+		vertical-align: sub;
+}
+
+a {
+	font-style: italic;
+	text-decoration: none;
+
+	&:hover {
+		color: red;
+	}
+}
+
+h2 {
+	font-size: 1.8rem;
+	line-height: 2;
+}
+
+h3 {
+	font-weight: lighter;
+	font-size: initial;
+}
+
+header {
+	&::before {
+		@include background('jolie');
+		left: 0;
+
+	}
+
+	&::after {
+		@include background('pitt');
+		right: 0;
+	}
+	
+	h1 {
+		font-family: 'Adobe Garamond Pro';
+		text-align: center;
+		font-size: 7.5vw;
+		font-weight: lighter;
+	}
+}
+
+article {
+
+	img {
+		width: 100%;
+		height: auto;
+		margin: 2rem 0;
+	}
+
+	p {
+		line-height: 1.5;
+		@include make-ratingClass(5);
+	}
+	
+}

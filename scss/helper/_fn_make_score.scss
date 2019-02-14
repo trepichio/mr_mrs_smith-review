@@ -1,0 +1,12 @@
+@function make-score($value,$max) {
+
+	$content: '';
+	@for $i from 1 through $value {
+		$content: $content + '★';
+	}
+	@for $i from 0 to ($max - $value) {
+		$content: $content + '☆';
+	}
+
+	@return $content;
+}

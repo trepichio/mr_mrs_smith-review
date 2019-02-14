@@ -1,0 +1,7 @@
+@mixin make-ratingClass($max) {
+	@for $i from 1 through $max {
+			span.rating-#{$i}::before {
+				content: make-score($i,$max);
+			}
+		}
+}
