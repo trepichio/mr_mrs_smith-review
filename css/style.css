@@ -54,7 +54,7 @@ header::before {
   height: 935px;
   max-width: 100%;
   background-color: #ccc;
-  background: url("../assets/images/jolie.jpg");
+  background: url("../assets/images/jolie.jpeg");
   background-size: contain;
   background-repeat: no-repeat;
   top: 7rem;
@@ -69,7 +69,7 @@ header::after {
   height: 935px;
   max-width: 100%;
   background-color: #ccc;
-  background: url("../assets/images/pitt.jpg");
+  background: url("../assets/images/pitt.jpeg");
   background-size: contain;
   background-repeat: no-repeat;
   top: 7rem;
